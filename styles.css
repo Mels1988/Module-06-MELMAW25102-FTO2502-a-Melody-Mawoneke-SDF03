@@ -50,7 +50,7 @@ img {
     padding: 6rem 0;
 }
 .profile::after{
-    content: none;
+    content:" ";
 display: block;
 clear: both;
     
@@ -61,7 +61,7 @@ clear: both;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:3.5rem;
+    margin-right:2.7rem;
 }
 .profile-image img{
     border-radius: 50%;
@@ -70,13 +70,11 @@ clear: both;
     border: 5px solid seagreen;
 }
 .profile-user-settings{
-    float:left;
-    width: 4rem;
     margin-top: 1rem;
 
 }
 .profile-user-name{
-    display: flex;
+    display: inline-block;
     flex-wrap: wrap;
     font-size:3rem;
     margin-top: 1,2rem;
@@ -86,21 +84,21 @@ clear: both;
     font-size: 1.5rem;
     line-height: 2;
     border: 0.1rem solid white;
-    border-radius: 0.33rem;
+    border-radius: 0.3rem;
     padding:0 2rem;
     margin-left:2rem;
     
 }
 .profile-setting-btn{
-    font-size:3.2rem;
+    font-size:3rem;
     margin:left 1.1rem;
 }
 .profile-stats li{
     display: inline-block;
     flex-direction: row;
-    gap: 1rem;
+    gap: 3rem;
     font-size:1.5rem ;
-    margin-right:4rem;
+    margin-right:0;
     padding: 0;
     line-height: 1.5;
     cursor: pointer;
@@ -108,20 +106,20 @@ clear: both;
 }
 .profile-bio{
  font-size:1.5rem;
- font-weight:400;
+ font-weight:300;
  line-height: 1.4;
  margin-top:2rem;
 }
 .profile-real-name,
 .profile-stat-count,
 .profile-edit-btn{
-font-weight: 500;
+font-weight: 400;
 }
 
 .gallery{
     display: flex;
     flex-wrap: wrap;
-    margin: -1rem -1rem;
+    margin:-1rem -1rem;
     padding-bottom:3rem;
 }
 .gallery-item{
@@ -153,11 +151,11 @@ font-weight: 500;
     font-weight: 600;
 }
 .gallery-item-likes{
-    margin-right: 2rem;
+    margin-right: 15px;
 }
 
 .gallery-item-comments{
-    margin-right: 2rem;
+    margin-right: 15px;
 
 }
 .gallery-item-type{
@@ -167,9 +165,10 @@ font-weight: 500;
     font-size:2.5rem;
     text-shadow: 0.2rem 0.2rem 0.2rem rgba(red, green, blue, alpha) 
 }
+
 .fa-clone,
 .fal-comment{
-    transform:rotate(90deg)
+    transform:rotateY('angle')
 }
 
 .gallery-image{
