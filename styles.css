@@ -21,3 +21,178 @@ body {
 img {
     display: block;
 }
+.container{
+    max-width: 95rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+}
+.btn{
+    display:inline-block;
+    font:inherit;
+    background:none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: 1rem auto blue;
+}
+.visually-hidden{
+    position: absolute !important;
+    height:1px;
+    width: 1px;
+    overflow: hidden;
+    clip:rect(1px,1px,1px,1px);
+}
+.profile{
+    padding: 6rem 0;
+}
+.profile::after{
+    content: none;
+display: block;
+clear: both;
+    
+}
+.profile-image{
+    float:left;
+    width:12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:3.5rem;
+}
+.profile-image img{
+    border-radius: 50%;
+    width:12rem;
+    background-color: #fafafa;
+    border: 5px solid seagreen;
+}
+.profile-user-settings{
+    float:left;
+    width: 4rem;
+    margin-top: 1rem;
+
+}
+.profile-user-name{
+    display: flex;
+    flex-wrap: wrap;
+    font-size:3rem;
+    margin-top: 1,2rem;
+    font-weight:200
+}
+.profile-edit-btn{
+    font-size: 1.5rem;
+    line-height: 2;
+    border: 0.1rem solid white;
+    border-radius: 0.33rem;
+    padding:0 2rem;
+    margin-left:2rem;
+    
+}
+.profile-setting-btn{
+    font-size:3.2rem;
+    margin:left 1.1rem;
+}
+.profile-stats li{
+    display: inline-block;
+    flex-direction: row;
+    gap: 1rem;
+    font-size:1.5rem ;
+    margin-right:4rem;
+    padding: 0;
+    line-height: 1.5;
+    cursor: pointer;
+
+}
+.profile-bio{
+ font-size:1.5rem;
+ font-weight:400;
+ line-height: 1.4;
+ margin-top:2rem;
+}
+.profile-real-name,
+.profile-stat-count,
+.profile-edit-btn{
+font-weight: 500;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom:3rem;
+}
+.gallery-item{
+    position:relative;
+    flex:1 0 22rem;
+    margin:1rem;
+    color:#fafafa;
+    cursor: pointer;
+
+}
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus,.gallery-item:info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width:100%;
+    height:100%;
+    background-color: antiquewhite;
+
+}
+.gallery-item-info{
+    display: none ;
+}
+.gallery-item-info li{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.gallery-item-likes{
+    margin-right: 2rem;
+}
+
+.gallery-item-comments{
+    margin-right: 2rem;
+
+}
+.gallery-item-type{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    font-size:2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(red, green, blue, alpha) 
+}
+.fa-clone,
+.fal-comment{
+    transform:rotate(90deg)
+}
+
+.gallery-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    cursor: pointer
+    }
+
+.loader{
+    width: 5rem;
+    height:5rem;
+    border: 0,6rem snow;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin:0 auto;
+    animation:loader 500ms linear infinite;
+}
+
+
+    
+
+
+    
+
+
